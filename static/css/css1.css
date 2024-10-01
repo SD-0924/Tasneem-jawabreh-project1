@@ -18,15 +18,49 @@ body {
 
 .header {
   grid-area: hd;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: white;
   padding: 1em;
 }
-.upper_header{
-  background-color: red;
-  height: 50px;
+/* Upper part of the header */
+.header-upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+
+/* Buttons on the right side of the upper header */
+.header-buttons {
+  display: flex;
+  gap: 5px; /* Space between the buttons */
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 3px; /* Space between the icon and text */
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+
+
+.button:hover {
+  background-color: #ccc;
+}
+
+/* Lower part of the header */
+.header-lower {
+  justify-content: center; /* Center content like search bar */
+  padding: 15px 0;
 }
 
 .content {
