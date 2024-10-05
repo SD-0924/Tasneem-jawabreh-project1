@@ -1,0 +1,103 @@
+.upper_part{
+    background-color: #333;
+
+}
+.content1 {
+    width: 40%;
+    margin: 20px 0;
+    background-color:#333;
+    color: white;
+    position: relative; /* Change from static */
+    left: 30%; /* Move the element to the right by 100px */
+}
+h1 {
+    margin-bottom: 0;
+}
+.rating {
+    color: #ffd700;
+    font-size: 24px;
+    margin: 10px 0;
+}
+.description {
+    text-align: justify;
+    line-height: 1.6;
+}
+.sub-topics {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    width: 40%;
+    position: relative; /* Change from static */
+    left: 30%; /* Move the element to the right by 100px */
+
+}
+.sub-topics h2 {
+    text-align: center;
+}
+.sub-topics ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sub-topics li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.sub-topics li:last-child {
+    border-bottom: none;
+}
+.sub-topics li::before {
+    content: "✓";
+    color: #4CAF50;
+    margin-right: 10px;
+}
+.sidebar {
+    position: fixed;
+    top: 30%;
+    right: 20px;
+    width: 200px;
+}
+.card1 {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.card-header img {
+    width: 100%;
+    height: auto;
+}
+.card-body {
+    padding: 15px;
+}
+.card-body p {
+    margin: 0 0 10px;
+    font-size: 14px;
+    color: #333;
+}
+.card-body .author {
+    font-weight: bold;
+}
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn svg {
+    margin-left: 5px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 14px;
+}

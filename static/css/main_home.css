@@ -3,6 +3,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #F0F9FF;
+  padding: 0;
+  font-size: .7em;
 }
 
 .container {
@@ -16,52 +18,6 @@ body {
   min-height: 100vh; /* Ensure the container takes up full viewport height */
 }
 
-.header {
-  grid-area: hd;
-  background-color: white;
-  padding: 1em;
-}
-/* Upper part of the header */
-.header-upper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-}
-
-
-/* Buttons on the right side of the upper header */
-.header-buttons {
-  display: flex;
-  gap: 5px; /* Space between the buttons */
-}
-
-.button {
-  display: flex;
-  align-items: center;
-  gap: 3px; /* Space between the icon and text */
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: white;
-  cursor: pointer;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 1em;
-}
-
-
-
-.button:hover {
-  background-color: #ccc;
-}
-
-/* Lower part of the header */
-.header-lower {
-  justify-content: center; /* Center content like search bar */
-  padding: 15px 0;
-}
 
 .content {
   grid-area: main;
@@ -142,10 +98,24 @@ body {
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease-in-out;
+  text-decoration: none; /* Keep no underline on hover */
+  color: inherit; /* Ensure color doesn't change */
 }
 
 .card:hover {
   transform: scale(1.05);
+  text-decoration: none; /* Keep no underline on hover */
+  color: inherit; /* Ensure color doesn't change */
+}
+.cards .card a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Keep the same text color as the parent element */
+}
+
+/* Optional: Add hover effect for better user experience */
+.cards .card a:hover {
+  text-decoration: none; /* Keep no underline on hover */
+  color: inherit; /* Ensure color doesn't change */
 }
 
 .card-image {
@@ -163,20 +133,19 @@ body {
 }
 
 .card-content {
-  padding: 10px;
-  text-align: center;
+  padding-left: 5px;
 }
 
 .card-title {
   font-size: 1.5em;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .card-description {
   font-size: 1em;
   color: #555;
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 
 .stars {
