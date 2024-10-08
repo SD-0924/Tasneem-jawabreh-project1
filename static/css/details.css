@@ -55,7 +55,7 @@ h1 {
 }
 .sidebar {
     position: fixed;
-    top: 30%;
+    top: 40%;
     right: 20px;
     width: 200px;
 }
@@ -92,9 +92,7 @@ h1 {
     align-items: center;
     justify-content: center;
 }
-.btn svg {
-    margin-left: 5px;
-}
+
 footer {
     text-align: center;
     padding: 20px;

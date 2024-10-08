@@ -1,0 +1,21 @@
+:root {
+    --brand-primary: #0768AC;
+    --brand-secondary: #03C180;
+    --bg_default: #FFFFFF;
+    --bg_body: #F0F9FF;
+    --lines-color: #DDDDDD;
+    --body-text: #333333;
+    --heart-color: #DC143C;
+
+
+}
+.dark-mode {
+    /* Dark mode variables */
+    --brand-primary: #0768AC; /* Same as light mode */
+    --brand-secondary: #03C180; /* Same as light mode */
+    --bg_default: #1A1A1A;
+    --bg_body: #282828;
+    --lines-color: #000000;
+    --body-text: #EDEDED;
+    --heart-color: #DC143C; /* Same as light mode */
+}
