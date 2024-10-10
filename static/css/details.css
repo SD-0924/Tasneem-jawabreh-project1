@@ -1,15 +1,19 @@
 .upper_part{
-    background-color: #333;
+    background-color: #3a3a3a;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 
 }
 .content1 {
-    width: 40%;
+    max-width: 400px;
+    width: 100%;
     margin: 20px 0;
-    background-color:#333;
+    background-color:#3a3a3a;
     color: white;
-    position: relative; /* Change from static */
-    left: 30%; /* Move the element to the right by 100px */
+
 }
+
 h1 {
     margin-bottom: 0;
 }
@@ -22,16 +26,22 @@ h1 {
     text-align: justify;
     line-height: 1.6;
 }
+.sub_topic_box{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
 .sub-topics {
-    background-color: white;
+    background-color: var(--bg_default);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     margin-top: 20px;
-    width: 40%;
-    position: relative; /* Change from static */
-    left: 30%; /* Move the element to the right by 100px */
-
+    width: 100%;
+    max-width: 400px;
+    color: var(--body-text);
+    
 }
 .sub-topics h2 {
     text-align: center;
@@ -54,10 +64,10 @@ h1 {
     margin-right: 10px;
 }
 .sidebar {
-    position: fixed;
-    top: 40%;
-    right: 20px;
-    width: 200px;
+    position: relative;
+    max-width: 200px;
+    width: 100%;
+    z-index: 1;
 }
 .card1 {
     background-color: white;
